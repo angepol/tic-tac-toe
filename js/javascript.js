@@ -1,28 +1,6 @@
 $(document).ready(function() {
 
-let currentPlayer = "X";
-    function changePlayer() {
-        if( currentPlayer  === "X" )
-            currentPlayer = "O";
-        else
-            currentPlayer = "X";
-    }
-
-$('.game--board').click(function(e) {
-  console.log('clicked');
-$(e.target).text(currentPlayer);
-changePlayer();
-checkForWin(e.target);
-  });
-
-
-
-function checkForWin(element){
-console.log($(element).data('button-index'));
-const cellNumbers = Number($(element).data('button-index'));
-console.log(cellNumbers);
-
-}
+// These are my Global Variables
 const wins = [
 
 [0, 1, 2],
@@ -34,71 +12,88 @@ const wins = [
 [0, 4, 8],
 [6, 4, 2]
 
-]
+];
+const moves = [];
+let currentPlayer = "X";
+
+// This is my Change Player function
+    function changePlayer() {
+        if( currentPlayer  === "X" )
+            currentPlayer = "0";
+        else
+            currentPlayer = "X";
+    }
+
+$('.game--board').click(function(e) {
+  // console.log('clicked');
+$(e.target).text(currentPlayer);
+checkForWin(e.target);
+changePlayer();
+  });
+
+function checkForWin(element) {
+console.log($(element).data('button-index'));
+const buttonNumber = Number($(element).data('button-index'));
+console.log(buttonNumber);
+
+moves[buttonNumber] = currentPlayer;
+console.log(moves[0]);
+
+if(moves[0]==="X"&&moves[1]==="X"&&moves[2]==="X"||moves[0]==="0"&&moves[1]==="0"&&moves[2]==="0") {
+  console.log('win!');
+}else if
+(moves[3]==="X"&&moves[4]==="X"&&moves[5]==="X"||moves[3]==="0"&&moves[4]==="0"&&moves[5]==="0") {
+  console.log('win!');
+}else if
+(moves[6]==="X"&&moves[7]==="X"&&moves[8]==="X"||moves[6]==="0"&&moves[7]==="0"&&moves[8]==="0") {
+  console.log('win!');
+}else if
+(moves[0]==="X"&&moves[3]==="X"&&moves[6]==="X"||moves[0]==="0"&&moves[3]==="0"&&moves[6]==="0") {
+  console.log('win!');
+}else if
+(moves[1]==="X"&&moves[4]==="X"&&moves[7]==="X"||moves[1]==="0"&&moves[4]==="0"&&moves[7]==="0") {
+  console.log('win!');
+}else if
+(moves[2]==="X"&&moves[5]==="X"&&moves[8]==="X"||moves[2]==="0"&&moves[5]==="0"&&moves[8]==="0") {
+  console.log('win!');
+}else if
+(moves[0]==="X"&&moves[4]==="X"&&moves[8]==="X"||moves[0]==="0"&&moves[4]==="0"&&moves[8]==="0") {
+  console.log('win!');
+}else if
+(moves[6]==="X"&&moves[4]==="X"&&moves[2]==="X"||moves[6]==="0"&&moves[4]==="0"&&moves[2]==="0") {
+  console.log('win!');
+} else {
+  console.log("cat's game! MEOW!");
+}
 
 
-// for() iterate through the different arrays
-// if
 
 
 
+// NEXT STEPS
+//CREATE A SCORE CARD
+//increment the score by 1
+//diasble board - when the condition is met then disable board.
+// function call the disable board funtion after each each round.( each else if statement)
 
-
-// once all 9 cels are filled, disable cells.
-
-// and call some function to evaluate the board
-//program checking for winning combinations in the array.
-//
-
-//
-
-//write instructions in HTML
-// Start a game!
-
-// $('.restart').on('click', function () {
-// });
-});
+//player score variable...
+// on click new game
 // $('.instructions').click(function () {
 //     alert(instructions);
 // });
 //
 
 
+};
+
+$('#restart').click( function() {
+  console.log('click');
+  $('.button').text("");
+$('.game--status').text("");
+
+})
 
 
 
 
-        //     const player1 = true;
-        //     const player2 = true;
-        //   const O = '0';
-        //   const X = 'X';
-        //
-        //     function resetP1() {
-        //         player1 = true;
-        //     }
-        //
-        //     function resetP2() {
-        //         player2 = true;
-        //     }
-        //
-        //     $(".button").click(function() {
-        //         var value = $(this).attr('value');
-        //         $(this).hide();
-        //
-        //         if(player1) {
-        //             $(this).html(X);
-        //             player1 = false;
-        //             resetP2();
-        //         } else {
-        //             $(this).html(O);
-        //             player2 = false;
-        //             resetP1();
-        //         }
-        //
-        //     });
-        // });
-        //
-
-
-        // Switch turns between X and O (or whichever markers you select)
-        // Visually display which side won if a player gets three in a row or show a draw/"cat’s game" if neither wins
+});
