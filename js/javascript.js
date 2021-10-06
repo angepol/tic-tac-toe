@@ -17,11 +17,11 @@ const moves = [];
 let currentPlayer = "X";
 
 // This is my Change Player function
-    function changePlayer() {
-        if( currentPlayer  === "X" )
-            currentPlayer = "0";
-        else
-            currentPlayer = "X";
+  function changePlayer() {
+  if( currentPlayer  === "X" )
+    currentPlayer = "0";
+  else
+    currentPlayer = "X";
     }
 
 $('.game--board').click(function(e) {
@@ -35,6 +35,7 @@ function checkForWin(element) {
 console.log($(element).data('button-index'));
 const buttonNumber = Number($(element).data('button-index'));
 console.log(buttonNumber);
+let winner = [];
 
 moves[buttonNumber] = currentPlayer;
 console.log(moves[0]);
@@ -70,12 +71,18 @@ if(moves[0]==="X"&&moves[1]==="X"&&moves[2]==="X"||moves[0]==="0"&&moves[1]==="0
 
 
 
+
+
 // NEXT STEPS
+//diasble board - when the condition is met then disable board.
+// be sure to git commit with each change from now
+//add correct indentation
+// alert players on winner rather than just console.log
+//button for instructions have them in a side pannel....
+// have a nicer colored background.
 //CREATE A SCORE CARD
 //increment the score by 1
-//diasble board - when the condition is met then disable board.
 // function call the disable board funtion after each each round.( each else if statement)
-
 //player score variable...
 // on click new game
 // $('.instructions').click(function () {
