@@ -24,7 +24,6 @@ section {
     grid-template-columns: repeat(3, auto);
     width: 306px;
     margin: 10px auto;
-    background-color: siver;
     color: Aliceblue;
     margin-top: 80px;
 }
