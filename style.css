@@ -42,6 +42,23 @@ section {
     margin: 30px auto;
 }
 
+.game--result {
+  float: left;
+}
+
+/* .score--card {
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 2px 2px #ecd7ba;
+  border: 2px solid #ecd7ba;
+  float: left; */
+
+/* } */
+
+.already-played {
+  pointer-events: none;
+}
+
 #restart {
     font-family: 'Amatic SC', cursive;
     background-color: white;
