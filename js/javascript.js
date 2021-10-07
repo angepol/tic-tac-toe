@@ -91,7 +91,7 @@ $(document).ready(function() {
       // console.log('click');
       // $('.button').text("");
       // $('.game--result').text("");
-  
+
       // $('.button').on("click");
       // $('.game--board').on("click");
       // changePlayer ();
