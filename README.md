@@ -2,7 +2,7 @@
 ===========
 
 
-Special Thanks to Rowena and Pat for their help!
+Special Thanks to Rowena and Pat and Joel for their help!
 
 Play [ tic-tac-toe](https://angepol.github.io/tic-tac-toe/).
 
@@ -32,7 +32,7 @@ A score card for multiple rounds.
 
 ## Scope of functionalities
 
-### Global Functions include;
+### Global Variables include;
   That are running throughout the program:
 
   1. playerOne
@@ -41,7 +41,7 @@ A score card for multiple rounds.
   1. currentPlayer - (representing either "X" or "0")
   1. markButton - (functions as a counter for the buttons clicked, specifically in the "if" statement for "cat's game")
 
-## More Functions;
+##  Functions;
 
 1. changePlayer - switches player consecutively.
 1. checkForWin - Takes the buttonNumber and current player through the if statements to determine if there has be a win for player "X", "0" , else "cat's game" if markButton === 9. If Game result delivers any of the messages indicated in the "if" statements, the buttons are then disabled. ( off.click)
