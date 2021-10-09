@@ -1,8 +1,8 @@
 # Project 0
 ===========
 
+My first project for GA's Software Engineering Immersive.
 
-Special Thanks to Rowena, Pat and Joel for their help!
 
 Play [ tic-tac-toe](https://angepol.github.io/tic-tac-toe/).
 
@@ -73,4 +73,4 @@ Version 1.0
 
 1. Creating an AI opponent for a single user.
 
-## Until then - enjoy! Thanks for using.
+## Until then - enjoy! 
