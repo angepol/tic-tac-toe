@@ -2,7 +2,7 @@
 ===========
 
 
-Special Thanks to Rowena and Pat and Joel for their help!
+Special Thanks to Rowena, Pat and Joel for their help!
 
 Play [ tic-tac-toe](https://angepol.github.io/tic-tac-toe/).
 
