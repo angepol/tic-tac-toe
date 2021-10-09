@@ -24,9 +24,9 @@ A score card for multiple rounds.
 ### Technologies;
 
 1.html
-1.CSS
-1.javascript
-1.jQuery libraries
+2.CSS
+3.javascript
+4.jQuery libraries
 
 
 
