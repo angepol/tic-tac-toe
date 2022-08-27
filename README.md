@@ -7,8 +7,9 @@ My first project for GA's Software Engineering Immersive.
 Play [ tic-tac-toe](https://angepol.github.io/tic-tac-toe/).
 
 
+<img width="873" alt="Screen Shot 2022-07-18 at 10 30 01 AM" src="https://user-images.githubusercontent.com/50424620/187046135-7e08677e-3772-4274-a34f-85d9953b1ebb.png">
 
-![Uploading Screen Shot 2022-07-18 at 10.30.01 AM.png…]()
+
 
 
 ### Introduction - the project's aim
