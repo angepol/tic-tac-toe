@@ -8,6 +8,9 @@ Play [ tic-tac-toe](https://angepol.github.io/tic-tac-toe/).
 
 
 
+![Uploading Screen Shot 2022-07-18 at 10.30.01 AM.png…]()
+
+
 ### Introduction - the project's aim
 
 
